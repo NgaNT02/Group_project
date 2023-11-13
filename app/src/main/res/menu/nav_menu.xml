@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Sign out" />
+            <item
+                android:id="@+id/nav_changePass"
+                android:icon="@drawable/ic_logout"
+                android:title="Change password" />
+            <item
+                android:id="@+id/nav_changeEmail"
+                android:icon="@drawable/ic_logout"
+                android:title="Change email" />
+            <item
+                android:id="@+id/nav_changeAvatar"
+                android:icon="@drawable/ic_logout"
+                android:title="Change email" />
+        </menu>
+    </item>
+
+    <item android:title="Contact">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_about"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_feedback"
+                android:title="Feedback" />
+        </menu>
+
+    </item>
+</menu>

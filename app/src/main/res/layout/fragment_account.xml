@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/input_login_hint"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/input_login_hint"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:background="?attr/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/logo"
+            android:background="@drawable/circle_background"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto" />
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="example@example.com"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="10"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btNhacNho"
+            android:layout_width="326dp"
+            android:layout_height="50dp"
+            android:layout_weight="7"
+            android:background="@color/white"
+            android:text="Nhắc nhở 09:00"
+            android:textSize="20dp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_weight="3"
+            android:id="@+id/switchNhacNho"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+    <Button
+        android:background="@color/white"
+        android:id="@+id/btVote"
+        android:layout_marginTop="2dp"
+        android:text="Feedback"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:background="@color/white"
+
+        android:layout_marginTop="2dp"
+        android:id="@+id/btUploadProfile"
+        android:text="Profile"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:background="@color/white"
+
+        android:layout_marginTop="2dp"
+        android:id="@+id/btHuongDanSuDung"
+        android:text="Hướng dẫn sử dụng"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:background="@color/white"
+
+        android:layout_marginTop="2dp"
+        android:id="@+id/btVersion"
+        android:text="Beta"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:background="@color/white"
+
+        android:layout_marginTop="2dp"
+        android:id="@+id/btPrivate"
+        android:text="Quyền Riêng Tư"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:background="@color/white"
+
+        android:layout_marginTop="2dp"
+        android:id="@+id/btDieuKhoan"
+        android:text="Điều Khoản Sử dụng"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:background="@color/white"
+        android:textColor="@color/incorrect"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btDangXuat"
+        android:text="Đăng xuất"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+</LinearLayout>
+</ScrollView>

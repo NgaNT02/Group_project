@@ -1,0 +1,104 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'vn.edu.usth.englishapp'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "vn.edu.usth.englishapp"
+        minSdk 24
+        //noinspection ExpiredTargetSdkVersion
+        targetSdk 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation platform('com.google.firebase:firebase-bom:32.0.0')
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-database-ktx:20.2.1'
+    implementation 'com.google.firebase:firebase-auth-ktx:22.0.0'
+
+    implementation 'com.google.firebase:firebase-ml-natural-language:22.0.0'
+    implementation 'com.google.firebase:firebase-ml-natural-language-language-id-model:20.0.7'
+    implementation 'com.google.firebase:firebase-firestore:24.1.1'
+    implementation 'com.google.firebase:firebase-storage:20.0.1'
+//    implementation 'com.google.firebase:firebase-ml-natural-language-translate-model:20.0.8'
+//    implementation 'com.google.firebase:firebase-ml-natural-language-translate:22.0.0'
+
+
+//    implementation 'com.google.firebase:firebase-config:19.2.0'
+
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.android.gms:play-services-auth:20.5.0'
+    implementation 'com.google.gms:google-services:4.3.15'
+
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.google.code.gson:gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    // implement reactive programming
+    // add call adapter factory
+    implementation 'com.squareup.retrofit2:adapter-rxjava3:2.9.0'
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+
+    //add request header setting request
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+
+
+    // dependency ml kit translate text - activity test translate text
+    implementation 'com.google.mlkit:translate:17.0.1'
+
+    // image pioker
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+
+    // recognize text image
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition:19.0.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-iid:21.1.0'
+
+    // thu vien image
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    // chart android
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+}

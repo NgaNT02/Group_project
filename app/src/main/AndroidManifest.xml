@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EnglishApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+<!--        <activity-->
+<!--            android:name=".app.CreateVoteActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".app.ChartActivity"-->
+<!--            android:exported="false" />-->
+
+<!--        <service android:name=".notify.MyService" />-->
+<!--        <service-->
+<!--            android:name=".notify.MyFirebaseMessagingService"-->
+<!--            android:exported="false">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.MESSAGING_EVENT" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+
+<!--        <activity-->
+<!--            android:name=".app.UploadProfileActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".app.PronounceActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".activity.TestTranslateTextActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".app.TranslateTextActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".app.ScanTextActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".app.Dic109KActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".activity.HandlerResultPaymentActivity"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <data android:scheme="myapp" />-->
+
+<!--                <action android:name="android.intent.action.VIEW" />-->
+
+<!--                <category android:name="android.intent.category.BROWSABLE" />-->
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+<!--        <activity-->
+<!--            android:name=".activity.ArticleActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".app.OxfordActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".RegisterActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".LoginActivity"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+<!--        <activity android:name=".app.TestMainActivity" />-->
+<!--        <activity android:name=".app.DailyWordActivity" />-->
+<!--        <activity android:name=".app.ListWordActivity" />-->
+<!--        <activity android:name=".app.HomeWorkActivity" />-->
+<!--        <activity android:name=".app.SearchActivity" />-->
+<!--        <activity android:name=".app.TopicActivity" />-->
+<!--        <activity android:name=".app.LessonActivity" />-->
+    </application>
+
+</manifest>

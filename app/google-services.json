@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "400593358302",
+    "firebase_url": "https://englishapp-a348d-default-rtdb.firebaseio.com",
+    "project_id": "englishapp-a348d",
+    "storage_bucket": "englishapp-a348d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400593358302:android:f0ac6fed916f22e009214f",
+        "android_client_info": {
+          "package_name": "vn.edu.usth.englishapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400593358302-je7olu33588mjtblkod8mm5rd4frlhtd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.edu.usth.englishapp",
+            "certificate_hash": "080ac13f91ba7ba8589535e210f3d56d33048f1e"
+          }
+        },
+        {
+          "client_id": "400593358302-m84u1fdgtjor20e3ham5ohrqqivrpb0f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQSpNVv0ok1jhXqNk6ymELj8XJkvanbzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400593358302-m84u1fdgtjor20e3ham5ohrqqivrpb0f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
